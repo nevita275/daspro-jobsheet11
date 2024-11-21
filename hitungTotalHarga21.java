@@ -9,7 +9,7 @@ public class hitungTotalHarga21 {
             int indexMenu = pilihanMenu[i] - 1;
             hargaTotal += hargaItems[indexMenu] * banyakItem[i];
         }
-
+        
         double diskon = 0;
         if (kodePromo.equals("DISKON50")) {
             System.out.println("Anda mendapatkan diskon 50%"); 
@@ -39,7 +39,7 @@ public class hitungTotalHarga21 {
             System.out.print("Masukkan jumlah item yg ingin dipesan: ");
             banyakItem[i] = sc.nextInt();
         }
-        
+
         sc.nextLine();
         System.out.print("Masukkan kode promo: ");
         String kodePromo = sc.nextLine();
